@@ -34,7 +34,7 @@ public class Client {
 						String msg = new String(buffer, 0, length, "UTF-8");//buffer에서 전달받은 내용을 length만큼의 길이로 UTF-8로 인코딩하여 msg문자열을 생성
 						
 						for(Client client : Main.clients) {	//다른 클라이언트들에게 클라이언트에서 전달받은 메세지를 보여준다
-							client.send(msg);
+							client.send(msg);				//클라이언트에서 내 메세지 이외에 다른 메세지가 안보이는데 이건 교수님께 여쭤봐야한다.
 						}
 					}
 				}catch(Exception e) {
